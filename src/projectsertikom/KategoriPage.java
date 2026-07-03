@@ -238,6 +238,9 @@ public class KategoriPage extends javax.swing.JFrame {
     }//GEN-LAST:event_txtKategoriActionPerformed
 
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
+    this.dispose();          // menutup jendela yang sedang terbuka
+    Dashboard dashboard = new Dashboard();
+    dashboard.setVisible(true); // membuka jendela Dashboard
         // TODO add your handling code here:
     }//GEN-LAST:event_btnKembaliActionPerformed
 

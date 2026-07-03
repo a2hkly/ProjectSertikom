@@ -371,7 +371,9 @@ tm.getDataIdProdukByKode(cbxKodeProduk.getSelectedItem().toString(), this);
     }//GEN-LAST:event_txtBayarActionPerformed
 
     private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
-
+    this.dispose();          // menutup jendela yang sedang terbuka
+    Dashboard dashboard = new Dashboard();
+    dashboard.setVisible(true); // membuka jendela Dashboard
         // TODO add your handling code here:
     }//GEN-LAST:event_btnKembaliActionPerformed
 
