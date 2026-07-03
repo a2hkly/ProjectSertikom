@@ -8,7 +8,7 @@
  *
  * @author Haykal Nauval Syafiq
  */
-package projectsertikom;
+package projectpenjualan;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
