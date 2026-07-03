@@ -68,6 +68,7 @@ public class TransaksiPage extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        btnKembali = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblTransaksi = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
@@ -94,12 +95,17 @@ public class TransaksiPage extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
         jLabel1.setText("Transaksi");
 
+        btnKembali.setText("Kembali");
+        btnKembali.addActionListener(this::btnKembaliActionPerformed);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(287, 287, 287)
+                .addContainerGap()
+                .addComponent(btnKembali)
+                .addGap(209, 209, 209)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -107,8 +113,10 @@ public class TransaksiPage extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnKembali)
+                    .addComponent(jLabel1))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         tblTransaksi.setModel(new javax.swing.table.DefaultTableModel(
@@ -362,6 +370,11 @@ tm.getDataIdProdukByKode(cbxKodeProduk.getSelectedItem().toString(), this);
         // TODO add your handling code here:
     }//GEN-LAST:event_txtBayarActionPerformed
 
+    private void btnKembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKembaliActionPerformed
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnKembaliActionPerformed
+
     public javax.swing.JTextField getTxtNamaProduk() {
     return txtNamaProduk;
 }
@@ -414,6 +427,7 @@ public javax.swing.JTextField getTxtKuantitas() {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDelete1;
+    private javax.swing.JButton btnKembali;
     private javax.swing.JButton btnMinus;
     private javax.swing.JButton btnPlus;
     private javax.swing.JButton btnSave1;
