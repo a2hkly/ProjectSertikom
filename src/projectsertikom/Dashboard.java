@@ -153,16 +153,19 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelDateActionPerformed
 
     private void btnProdukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProdukActionPerformed
+        this.dispose();
         new Produk().setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProdukActionPerformed
 
     private void btnKategoriActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKategoriActionPerformed
+        this.dispose();
         new KategoriPage().setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnKategoriActionPerformed
 
     private void btnTransaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTransaksiActionPerformed
+        this.dispose();
         new TransaksiPage().setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_btnTransaksiActionPerformed
